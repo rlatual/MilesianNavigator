@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/drawerColor"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="로그인"
+                android:textColor="@color/drawerSpecialText"
+                android:textSize="@dimen/middleTextSize" />
+
+            <LinearLayout
+                android:id="@+id/liHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLogin"
+                android:layout_marginBottom="@dimen/drawer_marginBottom"
+                android:layout_marginLeft="@dimen/drawer_marginLeft"
+                android:layout_marginTop="@dimen/drawer_marginTop"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_iconSize"
+                    android:layout_height="@dimen/drawer_iconSize"
+                    android:layout_marginRight="@dimen/drawer_iconRightmargin"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnLogin"
+                    android:layout_toRightOf="@+id/liHome"
+                    android:text="홈"
+                    android:layout_gravity="center"
+                    android:textColor="@color/drawerNormalText"
+                    android:textSize="@dimen/middleTextSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizon_line_height"
+                android:layout_below="@id/liHome"
+                android:background="@color/horizonLineColor"></View>
+
+            <TextView
+                android:id="@+id/tvfavorate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liHome"
+                android:layout_marginLeft="@dimen/drawer_marginLeft"
+                android:layout_marginTop="@dimen/drawer_marginTop"
+                android:text="즐겨찾기"
+                android:textColor="@color/drawerNormalText"
+                android:textSize="@dimen/middleTextSize" />
+
+            <LinearLayout
+                android:id="@+id/liSkillpra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvfavorate"
+                android:layout_marginBottom="@dimen/drawer_marginBottom"
+                android:layout_marginLeft="@dimen/drawer_marginLeft"
+                android:layout_marginTop="@dimen/drawer_marginTop"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_iconSize"
+                    android:layout_height="@dimen/drawer_iconSize"
+                    android:layout_marginRight="@dimen/drawer_iconRightmargin"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnLogin"
+                    android:layout_toRightOf="@+id/iconHome"
+                    android:layout_gravity="center"
+                    android:text="스킬수련 레시피"
+                    android:textColor="@color/drawerNormalText"
+                    android:textSize="@dimen/middleTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liTodo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liSkillpra"
+                android:layout_marginBottom="@dimen/drawer_marginBottom"
+                android:layout_marginLeft="@dimen/drawer_marginLeft"
+                android:layout_marginTop="@dimen/drawer_marginTop"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_iconSize"
+                    android:layout_height="@dimen/drawer_iconSize"
+                    android:layout_marginRight="@dimen/drawer_iconRightmargin"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnLogin"
+                    android:layout_toRightOf="@+id/iconHome"
+                    android:layout_gravity="center"
+                    android:text="오늘의 할 일"
+                    android:textColor="@color/drawerNormalText"
+                    android:textSize="@dimen/middleTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/limakingRec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liTodo"
+                android:layout_marginBottom="@dimen/drawer_marginBottom"
+                android:layout_marginLeft="@dimen/drawer_marginLeft"
+                android:layout_marginTop="@dimen/drawer_marginTop"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_iconSize"
+                    android:layout_height="@dimen/drawer_iconSize"
+                    android:layout_marginRight="@dimen/drawer_iconRightmargin"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnLogin"
+                    android:layout_toRightOf="@+id/iconHome"
+                    android:layout_gravity="center"
+                    android:text="제작 레시피"
+                    android:textColor="@color/drawerNormalText"
+                    android:textSize="@dimen/middleTextSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizon_line_height"
+                android:layout_below="@id/limakingRec"
+                android:background="@color/horizonLineColor"></View>
+
+            <TextView
+                android:id="@+id/tvMileinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/limakingRec"
+                android:layout_marginLeft="@dimen/drawer_marginLeft"
+                android:layout_marginTop="@dimen/drawer_marginTop"
+                android:text="밀레시안 정보"
+                android:textColor="@color/drawerNormalText"
+                android:textSize="@dimen/middleTextSize" />
+            <LinearLayout
+                android:id="@+id/liMileinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMileinfo"
+                android:layout_marginBottom="@dimen/drawer_marginBottom"
+                android:layout_marginLeft="@dimen/drawer_marginLeft"
+                android:layout_marginTop="@dimen/drawer_marginTop"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/drawer_iconSize"
+                    android:layout_height="@dimen/drawer_iconSize"
+                    android:layout_marginRight="@dimen/drawer_iconRightmargin"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnLogin"
+                    android:layout_toRightOf="@+id/iconHome"
+                    android:layout_gravity="center"
+                    android:text="스킬"
+                    android:textColor="@color/drawerNormalText"
+                    android:textSize="@dimen/middleTextSize" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

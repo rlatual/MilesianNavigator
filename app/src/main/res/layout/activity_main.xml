@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_background"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/appbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/appbar_height"></include>
+
+            <LinearLayout
+                android:id="@+id/main1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_itemheight"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/main_itemtbmargin"
+                android:background="@color/main_item"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/main_lrpadding"
+                android:paddingRight="@dimen/main_lrpadding">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/main1_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="에린시간"
+                        android:textColor="@color/main_normalText"
+                        android:textSize="@dimen/smallTextSize" />
+
+                    <TextView
+                        android:id="@+id/main1_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/main1_tv1"
+                        android:layout_centerHorizontal="true"
+                        android:text="00:00"
+                        android:textColor="@color/main_normalText"
+                        android:textSize="@dimen/middleTextSize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/main_lrpadding">
+
+                    <TextView
+                        android:id="@+id/main1_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="추천 아르바이트"
+                        android:textColor="@color/main_normalText"
+                        android:textSize="@dimen/smallTextSize" />
+
+                    <TextView
+                        android:id="@+id/main1_tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/main1_tv3"
+                        android:layout_centerHorizontal="true"
+                        android:text="성당"
+                        android:textColor="@color/main_normalText"
+                        android:textSize="@dimen/middleTextSize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/main_lrpadding">
+
+                    <TextView
+                        android:id="@+id/main1_tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="추천 활동"
+                        android:textColor="@color/main_normalText"
+                        android:textSize="@dimen/smallTextSize" />
+
+                    <TextView
+                        android:id="@+id/main1_tv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/main1_tv5"
+                        android:layout_centerHorizontal="true"
+                        android:text="없음"
+                        android:textColor="@color/main_normalText"
+                        android:textSize="@dimen/middleTextSize" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_itemheight"
+                android:layout_marginBottom="@dimen/main_itemtbmargin"
+                android:background="@color/main_item"
+                android:scrollbars="none">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_itemheight">
+
+                    <LinearLayout
+                        android:id="@+id/main2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_itemheight"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/main_lrpadding"
+                        android:paddingRight="@dimen/main_lrpadding">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/main2_tv1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="에린요일"
+                                android:textColor="@color/main_normalText"
+                                android:textSize="@dimen/smallTextSize" />
+
+                            <TextView
+                                android:id="@+id/main2_tv2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/main2_tv1"
+                                android:layout_centerHorizontal="true"
+                                android:text="벨테인"
+                                android:textColor="@color/main_normalText"
+                                android:textSize="@dimen/middleTextSize" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/main_lrpadding">
+
+                            <TextView
+                                android:id="@+id/main2_tv3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="요일\n효과 "
+                                android:textColor="@color/main_normalText"
+                                android:textSize="@dimen/middleTextSize" />
+
+                            <TextView
+                                android:id="@+id/main2_tv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_toRightOf="@+id/main2_tv3"
+                                android:text="1. 던전에서 아이템이 나올 확률 증가\n2. 같은 아이템을 던져도 던전의 모양까지 바뀜\n3. 전투계열 스킬 랭크업 시 보너스 증가"
+                                android:textColor="@color/main_normalText"
+                                android:textSize="@dimen/smallTextSize" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:id="@+id/main3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_itemheight"
+                android:layout_marginBottom="@dimen/main_itemtbmargin"
+                android:background="@color/main_item"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/main_lrpadding"
+                android:paddingRight="@dimen/main_lrpadding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/main3_tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/main_itemtbmargin"
+                        android:text="어드밴스드 아이템"
+                        android:textColor="@color/main_normalText"
+                        android:textSize="@dimen/smallTextSize" />
+
+                    <ListView
+                        android:id="@+id/main_lvadvan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/main3_tv1"
+                        android:dividerHeight="2dp"
+                        android:divider="#00000000"></ListView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/main4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_itemheight"
+                android:layout_marginBottom="@dimen/main_itemtbmargin"
+                android:background="@color/main_item"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/main_lrpadding"
+                android:paddingRight="@dimen/main_lrpadding">
+
+                <TextView
+                    android:id="@+id/main4_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="To-Do\nList"
+                    android:textColor="@color/main_normalText"
+                    android:textSize="@dimen/middleTextSize" />
+                <ListView
+                    android:id="@+id/main4_lvtodo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_lrpadding"></ListView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="end">
+
+            <include
+                layout="@layout/drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></include>
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

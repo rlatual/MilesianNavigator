@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--appbar-->
+    <dimen name="appbar_height">50dp</dimen>
+    <dimen name="appbar_padding">10dp</dimen>
+
+    <!-- drawer-->
+    <dimen name="drawer_marginRight">10dp</dimen>
+    <dimen name="drawer_marginLeft">10dp</dimen>
+    <dimen name="drawer_marginTop">10dp</dimen>
+    <dimen name="drawer_marginBottom">10dp</dimen>
+    <dimen name="drawer_width">250dp</dimen>
+    <dimen name="drawer_iconSize">30dp</dimen>
+    <dimen name="drawer_iconRightmargin">20dp</dimen>
+
+    <!-- common-->
+    <dimen name="horizon_line_height">1dp</dimen>
+    <dimen name="smallTextSize">15dp</dimen>
+    <dimen name="middleTextSize">20dp</dimen>
+    <dimen name="largeTextSize">25dp</dimen>
+
+    <!-- dialog -->
+    <dimen name="dialog_outlrmargin">15dp</dimen>
+    <dimen name="dialog_inlrmargin">10dp</dimen>
+    <dimen name="dialog_intbmargin">10dp</dimen>
+    <dimen name="dialog_padding">20dp</dimen>
+    <dimen name="dialog_recBtnWidth">60dp</dimen>
+    <dimen name="dialog_recBtnHeight">30dp</dimen>
+
+    <!--main-->
+    <dimen name="main_itemheight">100dp</dimen>
+    <dimen name="main_itemtbmargin">5dp</dimen>
+    <dimen name="main_lrpadding">20dp</dimen>
+    <dimen name="main_tbpadding">10dp</dimen>
+
+</resources>

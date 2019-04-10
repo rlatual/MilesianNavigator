@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:focusedByDefault="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_outlrmargin"
+        android:layout_marginRight="@dimen/dialog_outlrmargin"
+        android:background="@drawable/dialog_outline"
+        android:padding="@dimen/dialog_padding"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/drawer_iconSize"
+                android:layout_height="@dimen/drawer_iconSize"
+                android:src="@drawable/ic_pen"
+                android:layout_marginRight="@dimen/dialog_inlrmargin"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="앞으로 당신의 발자취를 기록하게 될 밀레시안 안내서에 오신 것을 환영합니다."
+                android:textColor="@color/drawerNormalText" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_recBtnHeight"
+            android:layout_marginTop="@dimen/dialog_intbmargin"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnLute"
+                android:layout_width="@dimen/dialog_recBtnWidth"
+                android:layout_height="match_parent"
+                android:text="류트"
+                android:textColor="@color/dialog_btnoffText"
+                android:background="@drawable/dialog_selectoff"></Button>
+            <Button
+                android:id="@+id/btnharf"
+                android:layout_width="@dimen/dialog_recBtnWidth"
+                android:layout_height="match_parent"
+                android:text="하프"
+                android:textColor="@color/dialog_btnoffText"
+                android:background="@drawable/dialog_selectoff"></Button>
+            <Button
+                android:id="@+id/btnMandol"
+                android:layout_width="@dimen/dialog_recBtnWidth"
+                android:layout_height="match_parent"
+                android:text="만돌린"
+                android:textColor="@color/dialog_btnoffText"
+                android:background="@drawable/dialog_selectoff"></Button>
+            <Button
+                android:id="@+id/btnWolf"
+                android:layout_width="@dimen/dialog_recBtnWidth"
+                android:layout_height="match_parent"
+                android:text="울프"
+                android:textColor="@color/dialog_btnoffText"
+                android:background="@drawable/dialog_selectoff"></Button>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="당신의 닉네임을 기록해주세요."
+            android:layout_marginTop="@dimen/dialog_intbmargin"
+            android:textColor="@color/commonGray"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/etNickname"
+            android:hint=""
+            android:gravity="center"
+            android:background="@drawable/dialog_outline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_intbmargin"/>
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnon"
+            android:layout_marginTop="@dimen/dialog_intbmargin"
+            android:textColor="@color/btnTextColor"
+            android:text="확인"
+            android:textSize="@dimen/middleTextSize"/>
+    </LinearLayout>
+
+</RelativeLayout>

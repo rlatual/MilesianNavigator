@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--common-->
+    <color name="horizonLineColor">#CECECE</color>
+    <color name="colorPrimary">#ff7a23</color>
+    <color name="colorPrimaryDark">#ff7a23</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="commonGray">#555555</color>
+    <color name="btnTextColor">#FFF</color>
+
+    <!-- appbar-->
+    <color name="appbarBottomLine">#ff7a23</color>
+    <color name="appbarColor">#FFF</color>
+
+    <!-- drawer-->
+    <color name="drawerColor">#FFF</color>
+    <color name="drawerSpecialText">#FFF</color>
+    <color name="drawerNormalText">#555555</color>
+
+    <!--dialog-->
+    <color name="dialog_btnoff">#555555</color>
+    <color name="dialog_btnoffText">#FFF</color>
+    <color name="dialog_background">#FFF</color>
+
+    <!--main-->
+    <color name="main_background">#CECECE</color>
+    <color name="main_item">#FFF</color>
+    <color name="main_normalText">#555555</color>
+
+
+</resources>
